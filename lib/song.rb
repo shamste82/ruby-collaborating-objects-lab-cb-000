@@ -12,12 +12,13 @@ class Song
     song_title = songs[1]
     puts "#{artist}"
     song = Song.new(song_title)
-    artist_name(artist)
+    artist_name=(artist)
     song
   end
 
   def artist_name=(n)
     @artist = Artist.find_or_create_by_name(n)
+    @artist.add_song(self.name)
   end
 
 end
