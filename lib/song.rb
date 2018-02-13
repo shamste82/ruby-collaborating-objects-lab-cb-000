@@ -12,7 +12,7 @@ class Song
     song_title = songs[1]
     puts "#{artist}"
     song = Song.new(song_title)
-    artist_name=(artist)
+    artist_name(artist)
     song
   end
 
