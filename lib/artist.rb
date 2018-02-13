@@ -6,6 +6,7 @@ class Artist
 
   def initialize(name)
     @name = name
+    self.save
     @@songs = Array.new
   end
 
