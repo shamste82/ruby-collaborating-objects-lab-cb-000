@@ -10,7 +10,6 @@ class Song
     #songs.each {|song| puts "#{song}"}
     artist = songs[0]
     song_title = songs[1]
-    puts "#{artist}"
     song = Song.new(song_title)
     song.artist_name=(artist)
     song
