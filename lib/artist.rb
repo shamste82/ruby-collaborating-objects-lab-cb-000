@@ -30,8 +30,6 @@ class Artist
     @@all.each do |artist|
       if name == artist.name
         x = artist
-      else
-        x.save
       end
     end
     x
