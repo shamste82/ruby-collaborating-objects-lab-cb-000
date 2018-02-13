@@ -27,13 +27,13 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    x = Artist.new(name)
     @@all.each do |artist|
       if name == artist.name
         x = artist
+        return x
       end
     end
-    x
+    x = Artist.new(name)
   end
 
   def print_songs
